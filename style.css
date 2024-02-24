@@ -1,0 +1,276 @@
+/* Green (#009B4D), tangerine yellow (#FFCC00), ivory (#FAF5E9) */
+
+img {
+    user-select: none;
+}
+
+.navbar-title {
+    color: white;
+    font-size: 23px;
+    font-style: italic;
+    font-family: monospace;
+
+}
+
+.first-navbar-end-list>li {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.first-navbar-end-list>li>a:hover {
+    color: #ffcc00;
+}
+
+.first-navbar-end-list>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.lang-dropdown-menu {
+    min-width: 20px !important;
+
+}
+
+@media (max-width: 768px) {
+    .top-navbar {
+        height: 80px;
+    }
+
+    .first-navbar-end-list {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item-login {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+
+    .first-navbar-end-list .nav-item {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .lang-dropdown-menu {
+        width: 100%;
+    }
+
+    .first-navbar-end-list .nav-item > a {
+        display: block;
+        line-height: 55px; 
+    }
+
+}
+
+.dp-toggle::after {
+    display: none !important;
+}
+
+.down-arrow {
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.buy-btn {
+    background-color: #009B4D !important;
+    color: white !important;
+}
+
+.second-navbar-container {
+    position: relative;
+}
+
+.second-navbar {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    z-index: 5;
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+.second-navbar:hover {
+    background-color: white !important;
+}
+
+.second-navbar:hover .second-navbar-list>li>a {
+    color: black !important;
+}
+
+.second-navbar-list>li>a {
+    color: white !important;
+}
+
+.second-navbar:hover .navbar-title {
+    color: black !important;
+    transition: 0.5s;
+}
+
+.second-navbar:hover .navbar-toggler {
+    background-color: black !important;
+    transition: 0.5s;
+}
+
+
+.trips>a:hover::first-letter {
+    color: #009B4D !important;
+    font-size: 18px;
+}
+
+.trips-dp>li>a:hover {
+    background: #FFCC00 !important;
+    color: white !important;
+}
+
+
+.accordion-button.collapsed.shadow {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ff0000 !important;
+}
+
+.cont1-img {
+    background-image: url("images/bg-img1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+}
+
+.cont2-img {
+    background-image: url("images/bg-img2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+}
+
+.gradient-title {
+    background-image: linear-gradient(to right, #009B4D, #00ff1e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.btn-know-more {
+    height: 30px;
+}
+
+.card-hover {
+    transition: 0.4s;
+}
+
+
+.card-hover:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.img-oval {
+    background-image: url(images/aqaba.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.card-credit {
+    position: relative;
+}
+
+.card-img-overlay {
+    background-color: rgba(14, 15, 19, 0.7);
+}
+
+.card-img-overlay:hover {
+    background: linear-gradient(#009B4D, #F26101);
+}
+
+.card-footer-info {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+
+.card-img {
+    width: 100% !important;
+    height: 100% !important;
+    transition: 0.5s ease;
+}
+
+.right-side-img {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.left-side-img {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.right-side-img {
+    clip-path: ellipse(300px 500px at 100% 50%);
+}
+
+.left-side-img {
+    clip-path: ellipse(300px 400px at 0% 50%);
+}
+
+@media (max-width: 991px) {
+
+    .right-side-img,
+    .left-side-img {
+        clip-path: none;
+    }
+
+    .right-side-img {
+        border-top-left-radius: 5px !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .left-side-img {
+        border-top-right-radius: 5px !important;
+        border-bottom-left-radius: 0 !important;
+    }
+}
+
+
+.playBtn:hover {
+    background-color: #007bff !important;
+    border: none !important;
+}
+
+.playBtn:hover .fa-play {
+    color: white !important;
+}
+
+.podcast-card {
+    overflow: hidden;
+}
+
+.podcast-card:hover .card-img {
+    transform: scale(1.1);
+}
+
+hr {
+    transition: 0.5s ease-out;
+}
+
+.podcast-card:hover hr {
+    width: 80% !important;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
